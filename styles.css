@@ -139,3 +139,9 @@ a {
 }
 /* END OF NEBULA FORGE THEME CSS */
 
+#unavailable {
+    font-size: 0.6rem;
+    color: var(--neon-pink);
+    margin-left: 10px;
+    font-weight: normal;
+}
