@@ -1,0 +1,141 @@
+/* =========================
+   NEBULA FORGE THEME CSS
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+:root {
+    --bg-dark: #070b1a;
+    --bg-space: #0c1028;
+    --neon-blue: #00eaff;
+    --neon-purple: #9b5cff;
+    --neon-pink: #ff3ec9;
+    --text-main: #e6f7ff;
+    --text-soft: #b8c7ff;
+    --card-bg: rgba(20, 25, 60, 0.85);
+    --glow: 0 0 15px rgba(0, 234, 255, 0.6);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #1a1f4a, var(--bg-dark));
+    color: var(--text-main);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #12002f, #1a004a, #0a0f3a);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--neon-blue);
+    box-shadow: 0 0 25px rgba(155, 92, 255, 0.6);
+}
+
+header h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, var(--neon-blue), var(--neon-pink), var(--neon-purple));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 20px rgba(255, 62, 201, 0.8);
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    gap: 30px;
+    flex: 1;
+}
+
+/* SECTIONS */
+section {
+    background: var(--card-bg);
+    border: 2px solid var(--neon-purple);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(155, 92, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 234, 255, 0.8);
+}
+
+/* TITRES */
+h2 {
+    color: var(--neon-blue);
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.7);
+}
+
+/* TEXTE */
+p {
+    color: var(--text-soft);
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 80px;
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(90deg, #0a0f3a, #1a004a, #12002f);
+    border-top: 2px solid var(--neon-pink);
+    box-shadow: 0 0 25px rgba(255, 62, 201, 0.5);
+}
+
+footer p {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.7);
+}
+
+/* SCROLLBAR NEON */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--neon-blue), var(--neon-pink));
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--neon-pink);
+    transition: color 0.3s ease;
+}
+
+#noConsommables {
+   color: var(--neon-purple);
+}
+/* END OF NEBULA FORGE THEME CSS */
+
